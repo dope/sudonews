@@ -77,6 +77,11 @@ main {
   margin-top: rem(50);
   margin-bottom: 50px;
   color: color(white);
+  display: none;
+
+  @include min-width(500) {
+    display: block;
+  }
 
   a {
     color: color(white);

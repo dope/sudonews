@@ -1,8 +1,11 @@
 .content {
   background: color(white);
   box-shadow: $base-shadow;
-  border-radius: 10px;
   overflow: hidden;
+
+  @include min-width(500) {
+    border-radius: 10px;
+  }
 
   &__item {
     position: relative;
