@@ -1,0 +1,67 @@
+.header {
+  display: none;
+  @include min-width(900) {
+    position: fixed;
+    display: block;
+    top: 40px;
+    left: 40px;
+    right: auto;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: rem(80);
+    height: rem(80);
+    cursor: pointer;
+
+    svg {
+      width: rem(80);
+      height: rem(80);
+    }
+  }
+
+  &__copy {
+    font-weight: font-weight(bold);
+    color: color(white);
+    max-width: rem(270);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: rem(30);
+
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+    animation: opaqueUp 300ms ease-in-out forwards 1s;
+
+    @include min-width(bp(m)) {
+      max-width: rem(294);
+    }
+
+    a {
+      color: color(white);
+      border-bottom: 1px solid rgba(color(white), 0.3);
+      font-style: italic;
+      text-decoration: none;
+      transition: border-bottom-color 300ms ease-in-out;
+
+      &:hover {
+        border-bottom-color: color(white);
+      }
+    }
+  }
+}
+
+
+.flash {
+  animation: flashRect 0.7s infinite;
+}
+
+@keyframes flashRect {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

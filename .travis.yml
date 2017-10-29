@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "5.11"
+before_script:
+  - npm install
+script:
+  - bower install
+  - gulp
+  - gulp version-assets

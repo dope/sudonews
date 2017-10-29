@@ -1,0 +1,27 @@
+.up {
+  position: fixed;
+  bottom: rem(50);
+  right: rem(-250);
+  cursor: pointer;
+  box-shadow: $base-shadow;
+  border-radius: 100px;
+  width: rem(50);
+  height: rem(50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  svg {
+    width: rem(30);
+    height: rem(30);
+  }
+}
+
+.upAppear {
+  right: rem(50);
+}

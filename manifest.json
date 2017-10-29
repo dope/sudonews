@@ -1,0 +1,11 @@
+{
+  "favicon/apple-touch-icon.png": "favicon/apple-touch-icon-105af451a0c9f6f337d9267e363dbb5b.png",
+  "favicon/manifest.json": "favicon/manifest-c8e3b78f511f57bf0242db20616f37f5.json",
+  "favicon/safari-pinned-tab.svg": "favicon/safari-pinned-tab-8f64b62beb8efe88783a406a11d08cda.svg",
+  "favicon/favicon.ico": "favicon/favicon-ead613bae4d41dbd47abd1aaed2dbacf.ico",
+  "styles/main.css": "styles/main-44972f8bc80d3cd320183c07126cdcd3.css",
+  "scripts/vendor.js": "scripts/vendor-9e8ee66be6c828dba3156b200cac7f66.js",
+  "scripts/main.js": "scripts/main-ae8169458ae5f092d8b9e267cf774198.js",
+  "partials/partials.min.js": "partials/partials.min-2d0c839091d659be9faa65f5c2edc216.js",
+  "scripts/ngConstants.js": "scripts/ngConstants-285ff0bdf401566b13d065355b675ebd.js"
+}

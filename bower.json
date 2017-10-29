@@ -1,0 +1,17 @@
+{
+  "name": "sudonews",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "*",
+    "angular-cookies": "*",
+    "angular-animate": "*",
+    "angular-touch": "*",
+    "angular-sanitize": "*",
+    "angular-ui-router": "*",
+    "restangular": "*",
+    "angular-truncate-2": "*",
+    "angular-timeago": "^0.4.5"
+  },
+  "devDependencies": {},
+  "appPath": "app"
+}
