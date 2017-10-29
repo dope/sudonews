@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" ng-app="sudonews" ng-controller="AppCtrl as appCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sudo News</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#DD2476">
+    <meta name="theme-color" content="#DD2476">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="{{ appCtrl.bodyClasses }}">
+
+    <main ng-controller="AppCtrl">
+        <div id="top" ng-include="'views/partials/header.html'" class="o-1"></div>
+        <div class="view" ui-view></div>
+        <div class="loader" ng-class="{'loader--hide': !loading}"></div>
+        <a ng-click="gotoElement('top')" class="up">
+            <div ng-include="'images/up.svg'"></div>
+        </a>
+    </main>
+
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="partials/partials.min.js"></script>
+    <script src="scripts/ngConstants.js"></script>
+</body>
+</html>

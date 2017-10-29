@@ -1,0 +1,18 @@
+<ul class="options">
+  <li
+    class="options__list"
+    ng-class="{'options__list--active': hackernewsSelected}"
+    ng-click="hackernewsSelected = true; compsciSelected = false; programmingSelected = false">Hacker News</li>
+  <li
+    class="options__list"
+    ng-class="{'options__list--active': compsciSelected}"
+    ng-click="hackernewsSelected = false; compsciSelected = true; programmingSelected = false">/r/compsci</li>
+  <li
+    class="options__list"
+    ng-class="{'options__list--active': programmingSelected}"
+    ng-click="hackernewsSelected = false; compsciSelected = false; programmingSelected = true">/r/programming</li>
+</ul>
+
+<div ng-include="'views/partials/content.html'"></div>
+
+<p class="footer">Created by <a target="_blank" href="//jrich.cc">Joe Richardson</a> • <a href="mailto:joe@lifes.gd" target="_blank">Submit a feed</a></p>

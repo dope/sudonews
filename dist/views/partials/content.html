@@ -1,0 +1,11 @@
+<div class="content" ng-show="hackernewsSelected">
+    <div ng-repeat="data in hackerNews.data.items" ng-include="'views/partials/content-item.html'"></div>
+</div>
+
+<div class="content" ng-show="compsciSelected">
+    <div ng-repeat="data in compsci.data.items" ng-include="'views/partials/content-item.html'"></div>
+</div>
+
+<div class="content" ng-show="programmingSelected">
+    <div ng-repeat="data in programming.data.items" ng-include="'views/partials/content-item.html'"></div>
+</div>

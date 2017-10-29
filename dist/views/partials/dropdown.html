@@ -1,0 +1,15 @@
+<ul class="dropdown" ng-click="showOptions=!showOptions" ng-class="{'dropdown--show': showOptions}">
+    <li class="dropdown__option dropdown__option--selected">
+        <a ui-sref="home" class="dropdown__link">
+            <i class="dropdown__icon" ng-include="'images/popular.svg'"></i>
+            Popular
+        </a>
+    </li>
+
+    <li class="dropdown__option">
+        <a ui-sref="home" href="term" class="dropdown__link">
+            <i class="dropdown__icon" ng-include="'images/new.svg'"></i>
+            Recent
+        </a>
+    </li>
+</ul>
