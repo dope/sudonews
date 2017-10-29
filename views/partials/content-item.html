@@ -1,0 +1,12 @@
+<!-- item  -->
+<a href="{{ data.link }}" target="_blank" class="content__item">
+    <div class="content__info">
+        <img class="content__icon" ng-src="images/newspaper.svg">
+        <h2 class="content__title">
+          <span>{{ data.title }}</span>
+        </h2>
+        <time class="content__time">{{ data.pubDate | timeAgo }}</time>
+
+        <div ng-include="'images/external.svg'" class="content__external"></div>
+    </div>
+</a>
